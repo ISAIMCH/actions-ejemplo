@@ -7,9 +7,6 @@ class Person:
     """
     
     def __init__(self, first_name, last_name):
-        self.first_name =  first_name
-        self.last_name = last_name
-        return first_name, last_name
         """
         Inicializa una persona con nombre y apellido.
         
@@ -17,10 +14,11 @@ class Person:
             first_name (str): El nombre de la persona
             last_name (str): El apellido de la persona
         """
+        self.first_name =  first_name
+        self.last_name = last_name
         
     
-    def __str__(self, first_name, last_name):
-        return f"{self.first_name.capitalize()} {self.last_name.capitalize()}"
+    def __str__(self):
         """
         Retorna una representación en string de la persona.
         
@@ -30,6 +28,9 @@ class Person:
         Returns:
             str: Nombre completo capitalizado
         """
+        # return f"{self.first_name.tittle()} {self.last_name.tittle()}"
+        return f"{self.first_name.title()} {self.last_name.title()}"
+
         
 
 
