@@ -20,7 +20,7 @@ class Person:
         
     
     def __str__(self, first_name, last_name):
-        return f"{self.first_name.capitalize()} {self.last_name.capitalize()}"
+        return f"{self.first_name.capitalize()} {self.last_name.()}"
         """
         Retorna una representación en string de la persona.
         
